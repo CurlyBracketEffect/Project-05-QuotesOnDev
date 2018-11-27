@@ -1,0 +1,88 @@
+//header
+
+$exo-light: exo-light;
+$exo-light-italic: exo-light-italic;
+$exo-medium: exo-medium;
+$exo-medium-italic: exo-medium-italic;
+
+.logo{
+    background: $grey;
+}
+h2{
+    margin: 0;   
+}
+
+.content-area{
+    display: flex;
+    justify-content: center;
+}
+
+#main{
+    display: flex;
+    justify-content: center;
+    width: 700px;
+}
+body{
+    background: $grey;
+    
+    .page-container{
+        // margin: 0 10%;
+        #page{
+            color: #ffffff;
+        .quote-form{
+            margin-top: 4rem;
+            width: 700px;
+            .heading{
+                font-family: $exo-medium;
+                font-size: 2em;
+                }
+            input[type=text]{
+                width: 30%;
+            }
+            textarea{
+                height: 120px;
+            }
+            input[type=text], textarea{
+                background-color: $grey;
+                border: 1px solid $green;
+                font-family: $exo-light;
+                color: white;
+                }
+            } 
+        }
+        
+    }
+}
+
+
+.site-main::before{
+    content: "\f10d";
+    left: 175px;
+    color: #0c0;
+    font-family: FontAwesome;
+    font-size: 125px;
+    line-height: 125px;
+    position: absolute;
+    top: 200px;
+}
+
+.site-main::after{
+    content: "\f10e";
+    right: 175px;
+    top: 200px;
+    color: #0c0;
+    font-family: FontAwesome;
+    font-size: 125px;
+    line-height: 125px;
+    position: absolute;
+}
+
+
+// *{
+//     border: 1px solid white;
+// }
+
+
+
+
+

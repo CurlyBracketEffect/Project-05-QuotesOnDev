@@ -47,3 +47,5 @@ themes/*
 !themes/quotesondev-starter-master/
 # Ignore packages #
 themes/quotesondev-starter-master/node_modules/
+
+!quotesondev.sql

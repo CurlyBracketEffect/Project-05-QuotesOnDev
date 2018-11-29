@@ -53,7 +53,7 @@ get_header(); ?>
 					));
 								
 					foreach( $categories as $category ) {
-						$categorylink = home_url('/') . $category->taxonomy . '/' . $category->name;
+						$categorylink = home_url('/category/') . $category->slug;
 				?>
 					<!-- DO  -->							
 						
@@ -73,7 +73,7 @@ get_header(); ?>
 					));
 								
 					foreach( $tags as $tag ) {
-						$taglink = home_url('/') . $tag->taxonomy . '/' . $tag->name;
+						$taglink = home_url('/tag/') . $tag->slug;
 				?>
 					<!-- DO  -->							
 						

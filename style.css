@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
 Theme Name: Quotes on Dev Starter Theme
 Theme URI: http://underscores.me/
@@ -223,19 +224,19 @@ th {
 --------------------------------------------------------------*/
 @font-face {
   font-family: "exo-light";
-  src: url("../../../../../Project-05-Starter/assets/fonts/exo-light-webfont.ttf"); }
+  src: url("../../assets/fonts/exo-light-webfont.ttf"); }
 
 @font-face {
   font-family: "exo-light-italic";
-  src: url("../../../../../Project-05-Starter/assets/fonts/exo-lightitalic-webfont.ttf"); }
+  src: url("../../assets/fonts/exo-lightitalic-webfont.ttf"); }
 
 @font-face {
   font-family: "exo-medium";
-  src: url("../../../../../Project-05-Starter/assets/fonts/exo-medium-webfont.ttf"); }
+  src: url("../../assets/fonts/exo-medium-webfont.ttf"); }
 
 @font-face {
   font-family: "exo-medium-italic";
-  src: url("../../../../../Project-05-Starter/assets/fonts/exo-mediumitalic-webfont.ttf"); }
+  src: url("../../assets/fonts/exo-mediumitalic-webfont.ttf"); }
 
 /*--------------------------------------------------------------
 # Typography
@@ -619,8 +620,65 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/* All Archives Page */
-/* Submit a Quote Page */
+.quote-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 4rem;
+  font-family: exo-light;
+  width: 43rem; }
+  .quote-area p {
+    margin: 0; }
+  .quote-area .quote {
+    font-size: 2.5rem; }
+  .quote-area .author {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 3rem; }
+  .quote-area .author:before {
+    content: "—"; }
+  .quote-area .new-quote {
+    -ms-flex-item-align: center;
+        align-self: center;
+    border: 2px solid #00cc00;
+    background: #222222;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    font-family: exo-light;
+    color: #00cc00;
+    text-shadow: none;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: .75rem 2.25rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content; }
+    .quote-area .new-quote:hover {
+      color: #009900;
+      border: 2px solid #009900; }
+
+a {
+  text-decoration: none;
+  color: #00cc00;
+  font-family: exo-light; }
+  a:visited {
+    color: #00cc00; }
+  a:hover {
+    color: #009900; }
+
+.sorry {
+  font-family: exo-light; }
+
 .logo {
   background: #222222; }
 
@@ -654,8 +712,10 @@ body {
       body .page-container #page .quote-form .heading {
         font-family: exo-medium;
         font-size: 2em; }
+      body .page-container #page .quote-form label {
+        font-family: exo-light; }
       body .page-container #page .quote-form input[type=text] {
-        width: 30%; }
+        width: 55%; }
       body .page-container #page .quote-form textarea {
         height: 120px; }
       body .page-container #page .quote-form input[type=text], body .page-container #page .quote-form textarea {
@@ -663,21 +723,34 @@ body {
         border: 1px solid #00cc00;
         font-family: exo-light;
         color: white; }
+      body .page-container #page .quote-form #submit {
+        border: 1px solid #00cc00;
+        background: #222222;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        font-family: exo-light;
+        color: #00cc00;
+        text-shadow: none;
+        font-size: 1rem;
+        padding: .5rem 1.5rem; }
+        body .page-container #page .quote-form #submit:hover {
+          color: #009900;
+          border: 1px solid #009900; }
 
 .site-main::before {
   content: "\f10d";
-  left: 175px;
+  left: 205px;
   color: #0c0;
   font-family: FontAwesome;
   font-size: 125px;
   line-height: 125px;
   position: absolute;
-  top: 200px; }
+  top: 255px; }
 
 .site-main::after {
   content: "\f10e";
-  right: 175px;
-  top: 200px;
+  right: 205px;
+  top: 255px;
   color: #0c0;
   font-family: FontAwesome;
   font-size: 125px;
@@ -690,7 +763,83 @@ body {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  margin-top: 3rem; }
 
 .logo-svg {
   width: 700px; }
+
+.site-info {
+  margin: 4.5rem 13rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+  .site-info #primary-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none; }
+    .site-info #primary-menu ul li {
+      padding: 0 1rem;
+      border-right: 1px solid white; }
+  .site-info a {
+    text-decoration: none;
+    color: #00cc00;
+    font-family: exo-light; }
+    .site-info a:hover {
+      color: #009900; }
+  .site-info p {
+    margin: 0;
+    padding-left: 1rem; }
+
+.archive-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: exo-light; }
+  .archive-main h2 {
+    margin: 10px 0; }
+  .archive-main ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .archive-main ul li {
+      margin-bottom: .5rem;
+      margin-right: 1.125rem;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content; }
+      .archive-main ul li a {
+        color: #00cc00;
+        text-decoration: none;
+        font-size: 1.25rem; }
+
+.about-main {
+  width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: exo-light;
+  margin-top: 35px; }
+  .about-main p {
+    margin-top: 0; }
+  .about-main h1 {
+    margin-bottom: 0; }
+  .about-main article {
+    margin-bottom: 0; }

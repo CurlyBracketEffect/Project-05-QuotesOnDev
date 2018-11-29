@@ -1,0 +1,30 @@
+.site-info{
+    margin: 4.5rem 13rem 3rem;
+    display: flex;
+    justify-content: flex-end;
+    #primary-menu{
+        ul{
+            display: flex;
+            list-style-type: none;
+            li{
+                padding: 0 1rem;
+                border-right: 1px solid white;
+            }
+            
+        }
+    }  
+    a{
+        text-decoration: none;
+        color: $green;
+        font-family: $exo-light;
+        &:hover{
+            color: $dark-green;
+        }
+    }  
+    p{
+        margin:0;
+        padding-left: 1rem;
+    }
+}
+
+

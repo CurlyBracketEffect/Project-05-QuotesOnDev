@@ -1,0 +1,16 @@
+.about-main{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    font-family: $exo-light;
+    margin-top: 35px;
+    p{
+        margin-top: 0;
+    }
+    h1{
+        margin-bottom: 0;
+    }
+    article{
+        margin-bottom: 0;
+    }
+}

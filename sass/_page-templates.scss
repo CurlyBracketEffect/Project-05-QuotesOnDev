@@ -2,7 +2,59 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-/* All Archives Page */
-
-/* Submit a Quote Page */
+.quote-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 4rem;
+    font-family: $exo-light;
+    width: 43rem;
+    p{
+        margin: 0;
+    }
+    .quote{
+        font-size: 2.5rem;
+    }
+    .author{
+        display: flex;
+        font-size: 1.25rem;
+        font-weight: 400;
+        margin-bottom: 3rem;
+        
+    }
+    .author:before{
+        content: "—";
+    }
+    .new-quote{
+        align-self: center;
+        border: 2px solid $green;
+        background: $grey;
+        box-shadow: none;
+        font-family: $exo-light;
+        color: $green;
+        text-shadow: none;
+        font-size: 1.25rem;
+        font-weight: 700;
+        padding: .75rem 2.25rem;
+        width: fit-content;
+        &:hover{
+            color: $dark-green;
+            border: 2px solid $dark-green;
+        }
+    }
+}
+a{
+    text-decoration: none;
+    color: $green;
+    font-family: $exo-light;
+    &:visited{
+        color: $green;
+    }
+    &:hover{
+        color: $dark-green;
+    }
+}
+.sorry{
+    font-family: $exo-light;
+}
 

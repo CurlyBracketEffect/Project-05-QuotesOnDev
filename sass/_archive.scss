@@ -1,0 +1,25 @@
+.archive-main{
+    display: flex;
+    flex-direction: column;
+    font-family: $exo-light;
+    h2{
+        margin: 10px 0;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        li{
+            margin-bottom: .5rem;
+            margin-right: 1.125rem;
+            width: fit-content;
+           a{
+            color: $green;
+            text-decoration: none;
+            font-size: 1.25rem;
+            } 
+        }
+    }
+}

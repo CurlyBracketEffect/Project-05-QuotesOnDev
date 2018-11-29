@@ -757,6 +757,9 @@ body {
   line-height: 125px;
   position: absolute; }
 
+.ghost-header {
+  height: 32px; }
+
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;

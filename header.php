@@ -19,6 +19,7 @@
 
 	<body <?php body_class(); ?>>
 	<div class="page-container">
+		<div class="ghost-header"></div>
 		<div id="page" class="hfeed site">
 			
 

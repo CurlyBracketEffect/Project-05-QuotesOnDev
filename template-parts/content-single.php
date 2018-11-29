@@ -12,12 +12,13 @@
 		<?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
-		
+
+		<!-- https://github.com/CurlyBracketEffect/Project-05-QuotesOnDev.git -->
 	</header><!-- .entry-header -->
 
 	<div class="quote-area">
 			
-			<p class="quote"><?php the_content(); ?></p>
+			<div class="quote"><?php the_content(); ?></div>
 			
 			<p class="author"><?php the_title(); ?><p class = "source"></p></p>
 			<button class="new-quote">Show Me Another!</button>

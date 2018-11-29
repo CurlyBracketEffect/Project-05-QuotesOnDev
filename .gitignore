@@ -23,3 +23,27 @@ ehthumbs.db
 # Ignore packages #
 # =============== #
 node_modules/
+
+# Ignore logs and databases #
+*.log
+*.sql
+*.sqlite
+error_log
+access_log
+
+# Ignored inside the wp-content folder#
+/*
+!.gitignore
+!plugins/
+!themes/
+!uploads/
+!README.md
+# Ignore everything in "plugins" except certain plugins. #
+plugins/*
+!plugins/wordpress-importer/
+
+# Ignore everything in "themes" except the active theme. #
+themes/*
+!themes/quotesondev-starter-master/
+# Ignore packages #
+themes/quotesondev-starter-master/node_modules/

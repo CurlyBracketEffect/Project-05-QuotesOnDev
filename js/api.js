@@ -39,6 +39,8 @@ $( document ).ready(function() {
             }); 
         
     })
+
+    
     //add a new quote to the database
     $('#submit').on('click', function(event) {
         event.preventDefault();//prevents page from refreshing

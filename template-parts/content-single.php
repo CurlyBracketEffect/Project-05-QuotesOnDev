@@ -12,11 +12,19 @@
 		<?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
-
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		
 	</header><!-- .entry-header -->
 
+	<div class="quote-area">
+			
+			<p class="quote"><?php the_content(); ?></p>
+			
+			<p class="author"><?php the_title(); ?><p class = "source"></p></p>
+			<button class="new-quote">Show Me Another!</button>
+
+	</div>
+
 	<div class="entry-content">
-		<?php the_content(); ?>
+		<?php //the_content(); ?>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->

@@ -29,12 +29,17 @@ get_header(); ?>
 					<ul class= "author-list">
 					<?php
 
-					$posts = get_posts();
-					echo wp_list_authors(); 
+					$posts = get_posts( array(
+						'numberposts' => -1,
+					));
+					
 					foreach($posts as $post){
-						// $authorLink = $post
-											}
-					?>
+						$author = get_the_title();
+						$postLink = get_permalink();
+						?>
+						<li><a href = "<?php echo $postLink?>"><?php echo $author ?></a></li>
+					<?php } ?>
+					</ul>
 				
 				</div><!-- authors -->
 
